@@ -1,4 +1,4 @@
-const BASE_URL = "/api";
+const BASE_URL = "https://codesense-backend.onrender.com/api";
 
 async function request(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
@@ -26,7 +26,7 @@ async function request(endpoint, options = {}) {
   } catch (error) {
     if (error.name === "TypeError" && error.message.includes("fetch")) {
       throw new Error(
-        "Unable to connect to the CodeSense backend server. Please make sure the Flask backend is running on http://127.0.0.1:5000."
+        "Unable to connect to the CodeSense backend server. Please try again later."
       );
     }
     throw error;
