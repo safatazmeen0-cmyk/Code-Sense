@@ -1,0 +1,66 @@
+{
+  "Syntax Error": {
+    "concept": "Python Syntax and Statement Structure",
+    "difficulty": "Beginner",
+    "why": "Python needs punctuation, brackets, colons, and statement order to follow exact grammar rules.",
+    "topics": ["Colons after blocks", "Parentheses and brackets", "Valid statements", "Reading traceback line numbers"],
+    "example": "if age >= 18:\n    print('Adult')",
+    "practice": "Write five if/else blocks and intentionally remove one colon, then fix the error."
+  },
+  "Name Error": {
+    "concept": "Variables, Scope, and Naming",
+    "difficulty": "Beginner",
+    "why": "A name error means Python saw a variable, function, or module name before it knew what that name referred to.",
+    "topics": ["Variable assignment", "Spelling names consistently", "Function scope", "Import names"],
+    "example": "score = 10\nprint(score)",
+    "practice": "Create three variables, print them, then rename one safely everywhere it is used."
+  },
+  "Type Error": {
+    "concept": "Python Data Types and Operations",
+    "difficulty": "Beginner",
+    "why": "Operations only work when the values involved have compatible types.",
+    "topics": ["str, int, float, list", "Type conversion", "Function arguments", "Operator compatibility"],
+    "example": "age = int(input('Age: '))\nprint(age + 1)",
+    "practice": "Convert strings to numbers before arithmetic in a small calculator program."
+  },
+  "Runtime Error": {
+    "concept": "Runtime Flow and Exception Handling",
+    "difficulty": "Intermediate",
+    "why": "Some problems appear only while the program is running with real values.",
+    "topics": ["Tracebacks", "try/except", "Input validation", "Testing edge cases"],
+    "example": "try:\n    number = int(value)\nexcept ValueError:\n    print('Enter a number')",
+    "practice": "Add input checks to a program that divides two numbers."
+  },
+  "Indentation Error": {
+    "concept": "Python Indentation and Code Blocks",
+    "difficulty": "Beginner",
+    "why": "Python uses indentation to understand which statements belong inside loops, functions, and conditionals.",
+    "topics": ["Four-space indentation", "Nested blocks", "Tabs vs spaces", "Indented suites"],
+    "example": "for item in items:\n    print(item)",
+    "practice": "Write a loop inside an if statement and align every block with four spaces."
+  },
+  "Import Error": {
+    "concept": "Modules, Imports, and Packages",
+    "difficulty": "Beginner",
+    "why": "Python must be able to find a module before your program can use it.",
+    "topics": ["import statements", "Installing packages", "Module names", "Virtual environments"],
+    "example": "import math\nprint(math.sqrt(16))",
+    "practice": "Import the math module and use three functions from it."
+  },
+  "Index Error": {
+    "concept": "Python Lists and Indexing",
+    "difficulty": "Beginner",
+    "why": "Lists can only be accessed with indexes that exist inside their valid range.",
+    "topics": ["Zero-based indexing", "Negative indexes", "len()", "List boundaries"],
+    "example": "items = ['a', 'b']\nprint(items[0])",
+    "practice": "Loop through a list using range(len(items)) and print each valid index."
+  },
+  "Logical Error": {
+    "concept": "Program Logic and Conditions",
+    "difficulty": "Intermediate",
+    "why": "A logical error means the code may run, but the result does not match the intended behavior.",
+    "topics": ["Boolean expressions", "Comparison operators", "Test cases", "Tracing values"],
+    "example": "if score >= 50:\n    print('Pass')",
+    "practice": "Write three test cases before coding a grade checker."
+  }
+}
