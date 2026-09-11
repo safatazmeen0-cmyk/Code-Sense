@@ -1,4 +1,4 @@
-const BASE_URL = "https://codesense-backend.onrender.com/api";
+const BASE_URL = "https://code-sense-c4lh.onrender.com/api";
 
 async function request(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
